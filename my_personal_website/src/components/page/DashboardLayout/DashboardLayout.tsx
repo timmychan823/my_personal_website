@@ -144,7 +144,7 @@ function DemoPageContent({ pathname }: { pathname: string }) {
                             <Stack direction="column">
                                 <Typography variant='h5'>Hong Kong Monetary Authority</Typography>
                                 <Typography variant='subtitle1'>Placement intern (Information Technology (Digitalisation Programme Delivery))</Typography>
-                                <Typography variant='caption'>Jun 2024 - Present</Typography>
+                                <Typography variant='caption'>Jun 2024 - Jun 2025</Typography>
                             </Stack>
                         </Stack>
 
