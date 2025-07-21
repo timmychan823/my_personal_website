@@ -1,0 +1,25 @@
+services:
+  frontend:
+    build: .
+    image: my_personal_website:latest
+    container_name: my_personal_website
+    volumes:
+      - .:/my_personal_website
+      - my_personal_website-node-modules:/my_personal_website/node_modules
+    ports:
+      - 33000:3000
+    working_dir: /my_personal_website
+    networks:
+      - app
+    environment:
+      CHOKIDAR_USEPOLLING: true
+      WATCHPACK_POLLING: true
+      DANGEROUSLY_DISABLE_HOST_CHECK: true
+    restart: always
+
+networks:
+  app:
+    driver: bridge
+
+volumes:
+  my_personal_website-node-modules:
